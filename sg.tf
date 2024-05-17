@@ -1,8 +1,11 @@
 resource "aws_security_group" "sg1" {
+<<<<<<< HEAD
     name = "Terraform-sg"
     description = "Allow ssh and httpd"
     vpc_id = aws_vpc.vpc1.id
     
+
+  
     
     ingress {
         description = "allow http"
@@ -31,9 +34,13 @@ resource "aws_security_group" "sg1" {
 resource "aws_security_group" "sg2" {
     name = "Terraform-sg-lb"
     description = "Allow ssh and httpd"
+<<<<<<< HEAD
      vpc_id = aws_vpc.vpc1.id
     
     
+=======
+    vpc_id = aws_vpc.vpc1.id
+>>>>>>> origin/main
     
     ingress {
         description = "allow http"
